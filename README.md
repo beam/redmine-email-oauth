@@ -15,7 +15,8 @@ Add task into lib/tasks
 Run bundle install
 
 Init email account token (interactive)
-rake redmine:email:o365_oauth2_init token_file=/app/redmine/config/email_oauth2 client=uuid tenant=uuid secret=key
+- ``rake redmine:email:o365_oauth2_init token_file=/app/redmine/config/email_oauth2 client=uuid tenant=uuid secret=key``
 
 Download emails
-rake redmine:email:receive_imap_oauth2 params are same as standart rake task, password not needed and add token_file=/app/redmine/config/email_oauth2
+- params are same as standart rake task, password not needed and add token_file=/app/redmine/config/email_oauth2
+- ``rake redmine:email:receive_imap_oauth2 token_file=/app/redmine/config/email_oauth2 ...``
